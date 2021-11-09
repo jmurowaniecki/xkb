@@ -1,0 +1,45 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "xkb-symbols",
+	"patterns": [
+		{
+			"name": "entity.name.function",
+			"match": "\\b(partial|key|include|name|map|virtual_modifiers|type|modifiers|level_name)\\b"
+		},
+		{
+			"name": "entity.name.function",
+			"match": "\\b(NumLock|Alt|LevelThree|LAlt|RAlt|RControl|LControl|ScrollLock|LevelFive|AltGr|Meta|Super|Hyper)\\b"
+		},
+		{
+			"name": "entity.name.function",
+			"match": "\\bxkb_[a-z]*\\b"
+		},
+		{
+			"name": "constant.character.escape",
+			"match": "\\bU[0-9A-Za-z_]*\\b"
+		},
+		{
+			"name": "constant.character",
+			"match": "\\b[0-9A-Za-z_]+\\b"
+		},
+		{
+			"name": "keyword",
+			"match": "<[A-Za-z0-9]*>"
+		},
+		{
+			"name": "comment.line",
+			"match": "//.*$"
+		},
+		{
+			"name": "string.quoted.single",
+			"begin": "'",
+			"end": "'"
+		},
+		{
+			"name": "string.quoted.double",
+			"begin": "\"",
+			"end": "\""
+		}
+	],
+	"scopeName": "source.xkb"
+}
