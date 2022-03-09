@@ -3,7 +3,7 @@
     "displayName": "xkb-symbols",
     "description": "xkb X Keyboard Symbol declaration.",
     "homepage": "https://github.com/jmurowaniecki/xkb",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "publisher": "compilouit",
     "author": {
         "name": "John Murowaniecki",
@@ -38,16 +38,26 @@
         "publish": "npm run publish:extension && npm run publish:repository"
     },
     "contributes": {
-        "languages": [{
-            "id": "xkb",
-            "aliases": ["xkb-symbols", "xkb"],
-            "extensions": [".xkb", ".xkbi"],
-            "configuration": "./language-configuration.json"
-        }],
-        "grammars": [{
-            "language": "xkb",
-            "scopeName": "source.xkb",
-            "path": "./syntaxes/xkb.tmLanguage.json"
-        }]
+        "languages": [
+            {
+                "id": "xkb",
+                "aliases": [
+                    "xkb-symbols",
+                    "xkb"
+                ],
+                "extensions": [
+                    ".xkb",
+                    ".xkbi"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "xkb",
+                "scopeName": "source.xkb",
+                "path": "./syntaxes/xkb.tmLanguage.json"
+            }
+        ]
     }
 }
