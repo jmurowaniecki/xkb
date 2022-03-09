@@ -2,13 +2,41 @@
     "name": "xkb",
     "displayName": "xkb-symbols",
     "description": "xkb X Keyboard Symbol declaration.",
+    "homepage": "https://github.com/jmurowaniecki/xkb",
     "version": "0.0.1",
+    "publisher": "compilouit",
+    "author": {
+        "name": "John Murowaniecki",
+        "email": "jmurowaniecki@gmail.com",
+        "url": "https://compilou.com.br"
+    },
+    "maintainers": [
+        "John Murowaniecki <jmurowaniecki@gmail.com>"
+    ],
+    "contributors": [],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/jmurowaniecki/xkb.git"
+    },
+    "bugs": {
+        "url": "https://github.com/jmurowaniecki/xkb/issues"
+    },
+    "icon": "assets/icon.png",
+    "galleryBanner": {
+        "color": "#261d45",
+        "theme": "dark"
+    },
     "engines": {
-        "vscode": "^1.62.0"
+        "vscode": "^1.48.0"
     },
     "categories": [
         "Programming Languages"
     ],
+    "scripts": {
+        "publish:extension": "vsce publish patch",
+        "publish:repository": "git push origin main",
+        "publish": "npm run publish:extension && npm run publish:repository"
+    },
     "contributes": {
         "languages": [{
             "id": "xkb",
