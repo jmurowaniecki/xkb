@@ -9,9 +9,13 @@ Syntax highlight for X Keyboard symbol files.
 
 # Getting started
 
+Clone this repository locally using:
+
 ```sh
 git clone git@github.com:jmurowaniecki/xkb.git ~/.vscode/extensions/
 ```
+
+Or see more informations on [Open VSX Registry](https://open-vsx.org/extension/CompilouIT/xkb) or in [Microsoft Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=CompilouIT.xkb).
 
 ---
 

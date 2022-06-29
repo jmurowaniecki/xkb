@@ -33,7 +33,9 @@
         "Programming Languages"
     ],
     "scripts": {
-        "publish:extension": "vsce publish patch",
+        "publish:extension:ovsx": "npx ovsx publish -p \"${OVSX_ACCESS_TOKEN}\"",
+        "publish:extension:msvs": "vsce publish patch",
+        "publish:extension": "npm run publish:extension:ovsx && npm run publish:extension:msvs",
         "publish:repository": "git push origin main",
         "publish": "npm run publish:extension && npm run publish:repository"
     },
