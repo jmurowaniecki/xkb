@@ -3,7 +3,7 @@
     "displayName": "xkb-symbols",
     "description": "xkb X Keyboard Symbol declaration.",
     "homepage": "https://github.com/jmurowaniecki/xkb",
-    "version": "0.0.2",
+    "version": "0.1.0",
     "publisher": "compilouit",
     "author": {
         "name": "John Murowaniecki",
